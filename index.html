@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Tienda - Agregar Productos</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+
+    <h1>Gestión de Productos</h1>
+
+    <section id="form-container">
+        <h2>Añadir Nuevo Producto</h2>
+        <form id="product-form">
+            <input type="hidden" id="product-id">
+            <input type="text" id="name" placeholder="Nombre del producto" required>
+            <input type="number" id="price" step="any" placeholder="Precio" required>
+            <button type="submit" id="submit-button">Guardar en la lista</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <section id="list-container">
+        <h2>Productos Disponibles</h2>
+        <ul id="product-list">
+            </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
