@@ -12,7 +12,7 @@ async function loadProducts() {
         const data = await res.json();
         
         productList.innerHTML = ''; 
-        // Si data es el array que vimos en Render, esto funcionará perfecto
+
         data.forEach(p => {
             const li = document.createElement('li');
             li.innerHTML = `<span><strong>${p.item}</strong> - $${p.precio}</span>`;
@@ -74,5 +74,6 @@ productForm.addEventListener('submit', async (e) => {
 
 
 loadProducts();
+
 
 
