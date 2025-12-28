@@ -4,7 +4,7 @@ const btnSubmit = document.getElementById('submit-button');
 const inputId = document.getElementById('product-id');
 
 
-const API_URL = 'https://tareadiciembre.onrender.com';
+const API_URL = 'https://tareadiciembre.onrender.com/productos'; 
 
 async function loadProducts() {
     try {
@@ -12,6 +12,7 @@ async function loadProducts() {
         const data = await res.json();
         
         productList.innerHTML = ''; 
+        // Si data es el array que vimos en Render, esto funcionará perfecto
         data.forEach(p => {
             const li = document.createElement('li');
             li.innerHTML = `<span><strong>${p.item}</strong> - $${p.precio}</span>`;
@@ -73,4 +74,5 @@ productForm.addEventListener('submit', async (e) => {
 
 
 loadProducts();
+
 
