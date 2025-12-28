@@ -3,7 +3,7 @@ const productForm = document.getElementById('product-form');
 const btnSubmit = document.getElementById('submit-button');
 const inputId = document.getElementById('product-id');
 
-// Cambia esta URL cuando tengas la de Render
+
 const API_URL = 'https://tareadiciembre.onrender.com';
 
 async function loadProducts() {
@@ -73,3 +73,4 @@ productForm.addEventListener('submit', async (e) => {
 
 
 loadProducts();
+
